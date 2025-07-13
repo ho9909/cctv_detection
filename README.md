@@ -41,17 +41,20 @@
 > 본 프로젝트를 실행하기 위해 아래의 단계를 따라주세요.
 >
 <br />
+
 >> ## 1. 프로젝트 클론
 >>> git clone https://github.com/ho9909/cctv_detection.git
 >>> cd cctv_detection
 >>>
 <br />
+
 >> ## 2. YOLOv5 서브모듈 클론 및 설정
 > 
 >>> 프로젝트가 YOLOv5의 내부 함수를 직접 사용하므로, YOLOv5 레포지토리를 서브모듈로 클론하고 설정하는 과정이 필요합니다.
 >>> // YOLOv5 서브모듈 초기화 및 클론
 >>> git submodule update --init --recursive
 <br />
+
 >> ## 3. 필요 라이브러리 설치
 >>> requirements.txt 파일을 통해 필요한 모든 파이썬 라이브러리를 설치합니다.
 >>> pip install -r requirements.txt
