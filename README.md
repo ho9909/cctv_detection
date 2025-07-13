@@ -81,19 +81,19 @@
 >>>
 >>> python track_vehicles.py --api-key "YOUR_API_KEY_HERE" --weights "path/to/your/best.pt" --conf-thres 0.5 --interval 3
 </br>
->> 실행 인자 (Command-line Arguments)
->>> |인자|설명|내기본값|
->>> |------|---|---|
->>> |--api-key|(필수) ITS 오픈 API 서비스 키|-|
->>> |--weights|사용할 .pt 가중치 파일 경로. 미지정 시 runs/train/의 최신 모델 자동 탐색|None|
->>> |--conf-thres|객체 탐지 신뢰도 임계값 (0.0 ~ 1.0)|0.4|
->>> |--iou-thres|NMS(Non-Maximum Suppression) IoU 임계값 (0.0 ~ 1.0)|0.5|
->>> |--interval|차량을 탐지할 프레임 간격|5|
->>> |--radius|다음 CCTV를 탐색할 반경 (km)|1.0|
->>> |--classes|탐지할 클래스의 ID 목록 (공백으로 구분)|2 3 5 7|
->>> |--max-pages|API로부터 가져올 최대 페이지 수|10|
->>> |--test|단위 테스트를 실행하고 종료|False|
-</br>
+### 실행 인자 (Command-line Arguments)
+
+| 인자 | 설명 | 기본값 |
+| :--- | :--- | :--- |
+| `--api-key` | **(필수)** ITS 오픈 API 서비스 키 | - |
+| `--weights` | 사용할 `.pt` 가중치 파일 경로. 미지정 시 `runs/train/`의 최신 모델 자동 탐색 | `None` |
+| `--conf-thres` | 객체 탐지 신뢰도 임계값 (0.0 ~ 1.0) | `0.4` |
+| `--iou-thres` | NMS(Non-Maximum Suppression) IoU 임계값 (0.0 ~ 1.0) | `0.5` |
+| `--interval` | 차량을 탐지할 프레임 간격 | `5` |
+| `--radius` | 다음 CCTV를 탐색할 반경 (km) | `1.0` |
+| `--classes` | 탐지할 클래스의 ID 목록 (공백으로 구분) | `2 3 5 7` |
+| `--max-pages` | API로부터 가져올 최대 페이지 수 | `10` |
+| `--test` | 단위 테스트를 실행하고 종료 | `False` |
 
 > # 6. Sheets로 내보내기
 >> ✅ 단위 테스트 (Unit Tests)
